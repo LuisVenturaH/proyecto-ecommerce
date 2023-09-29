@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forma de pago</title>
+    <link rel="stylesheet" href="/CCS/style.css">
 </head>
 <body>
     <header>
@@ -14,30 +15,39 @@
         <a href="finalizarpedido.html">Finalizar Pedido</a>
     </header>
     
-</body>
 <main>
 <h1>Forma de pago</h1>
 <a href="productos.html">Seguir comprando</a>
 
 <div>
-    <div>
-        <h2>Mis tarjetas</h2>
-        <input type="checkbox" name="tarjeta1" id="tarjeta1"/>Mastercard xxxx
-        <input type="checkbox" name="tarjeta2" id="tarjeta2"/>Mastercard xxxx
-        <input type="checkbox" name="tarjeta3" id="tarjeta3"/>Mastercard xxxx
-        <button type="submit" id="proceder">Pagar con tarjeta</button>
-    </div>
-    <div>
+  <h2>Mis tarjetas</h2>
+    <form>
+        <label for="tarjeta">
+          <input type="radio" value="7654" id="tarjeta1" name="tarjeta"/>Mastercard ...7654
+        </label>
+        <br />
+        <label for="tarjeta">
+          <input type="radio" value="4567" id="tarjeta2" name="tarjeta"/>Mastercard ...4567
+        </label>
+        <br />
+        <label for="tarjeta">
+          <input type="radio" value="3690" id="tarjeta3" name="tarjeta"/>Mastercard ...3690
+        </label>
+        <br />
+        <a href="finalizarcompra.html">Pagar con este tarjeta</a>
+    </form>
+  </div>
+
+  <div>
         <h2>Añadir nueva tarjeta</h2>
      <form>
         <input type="number" name="numero tarjeta" id="num-tarjeta" placeholder="Número de tarjeta"/>
         <input type="text" name="nombre tarjeta" id="nom-tarjeta" placeholder="Titular de la tarjeta"/>
-        <input type="number" name="caducidad" id="fecha-caducidad" placeholder="Caducidad"/>
-        <input type="number" name="Cogido Seguro" id="cod-seguro" placeholder="Codigo seguro">
+        <input type="date" name="ccv" id="fecha-caducidad" placeholder="Caducidad"/>
+        <input type="number" name="Cogido Seguro" id="cccv" placeholder="Codigo seguro" min="0"/>
      </form>
      <button type="submit" id="anadirtarj">Añadir a mis tarjetas</button>
-    </div>
-</div>
+  </div>
 </main>
 
  <section>
@@ -124,4 +134,5 @@
    </div>
  </div>
 </footer>
+</body>
 </html>

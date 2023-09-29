@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito</title>
+    <link rel="stylesheet" href="/CCS/style.css">
 </head>
 <body>
     <header>
@@ -19,94 +20,77 @@
 <h1>Mi carrito</h1>
 <a href="productos.html">Seguir comprando</a>
 
-<div>
+<section>
     <div>
         <div>
         <img src="/Imagenes/Altavoces.jpg" alt="Altavoces" width="10%">
         <h2>Altavoces o Barra de Sonido Estéreo</h2>
-        <h3>450.99</h3>
-        <input type="number" name="cantidad" id="cantidad">
+        <p>450.99</p>
+        <input type="number" name="cantidad" id="cantidad" min="1" max="10" value="1"/>
         <button type="submit" name="eliminar producto" id="eliminar"></button>
      </div>
      <div>
         <img src="/Imagenes/cascos.jpg" alt="Cascos" width="10%">
         <h2>Auriculares T&G TWS Estéreo</h2>
-        <h3>450.99</h3>
-        <input type="number" name="cantidad" id="cantidad">
+        <p>450.99</p>
+        <input type="number" name="cantidad" id="cantidad"  min="1" max="10" value="1"/>
         <button type="submit" name="eliminar producto" id="eliminar"></button>
       </div>
         <div>
         <img src="/Imagenes/Auriculares.jpg" alt="Auriculares" width="10%">
         <h2>Auriculares Esterero con cancelación de ruido</h2>
-        <h3>450.99</h3>
-        <input type="number" name="cantidad" id="cantidad">
+        <p>450.99</p>
+        <input type="number" name="cantidad" id="cantidad"  min="1" max="10" value="1"/>
         <button type="submit" name="eliminar producto" id="eliminar"></button>
        </div>
     </div>
     <div>
-        <h2>Resumen de pedido</h2>
-        <h3>Continua con el proceso de compra para pagar con tu tarjeta de crédito o Bizum</h3>
-        <h3>450.99</h3>
-        <button type="submit">Proceder con el pago</button>
+        <h3>Resumen de pedido</h3>
+        <p>Continua con el proceso de compra para pagar con tu tarjeta de crédito o Bizum</p>
+        <p>450.99</p>
+        <a href="finalizarcompra.html">Proceder con el pago</a>
     </div>
-</div>
+</section>
 </main>
+
 <section>
     <h3>Otros usuarios también compraron</h3>
-   <div>
-     <div>
+    <div>
        <img src="/Imagenes/Altavoces.jpg" width="20%" alt="Altavoces" />
-       <div>
-         <h3>Altavoces inalámbricos</h3>
-         <h3>450,99</h3>
+       <h3>Altavoces inalámbricos</h3>
+       <p>450,99</p>
+       <p>Consigue ahora los mejores productos de Gnaranja</p>
+       <a href="carrito.html">Añadir a carrito</a>
+       <a href="detalle-producto.html">Ver</a>
        </div>
-       <h4>Consigue ahora los mejores productos de Gnaranja</h4>
-       <div>
-         <a href="carrito.html">Añadir a carrito</a>
-         <a href="detalle-producto.html">Ver</a>
-       </div>
-     </div>
+    
      <div>
        <img src="/Imagenes/cascos.jpg" width="20%" alt="Cascos" />
-       <div>
-         <h3>Cascos TWS</h3>
-         <h3>450,99</h3>
+       <h3>Cascos TWS</h3>
+       <p>450,99</p>
+       <p>Consigue ahora los mejores productos de Gnaranja</p>
+       <a href="carrito.html">Añadir a carrito</a>
+       <a href="detalle-producto.html">Ver</a>
        </div>
-       <h4>Consigue ahora los mejores productos de Gnaranja</h4>
-       <div>
-         <a href="carrito.html">Añadir a carrito</a>
-         <a href="detalle-producto.html">Ver</a>
-       </div>
-     </div>
+    
      <div>
-       <img
-         src="/Imagenes/Auriculares.jpg"
-         width="20%"
-         alt="Auriculares"
-       />
-       <div>
-         <h3>Auriculares Estéreo</h3>
-         <h3>450,99</h3>
-       </div>
-       <h4>Consigue ahora los mejores productos de Gnaranja</h4>
-       <div>
-         <a href="carrito.html">Añadir a carrito</a>
-         <a href="detalle-producto.html">Ver</a>
-       </div>
-     </div>
-     <div>
+       <img src="/Imagenes/Auriculares.jpg" width="20%"alt="Auriculares"/>
+       <h3>Auriculares Estéreo</h3>
+       <p>450,99</p>
+       <p>Consigue ahora los mejores productos de Gnaranja</p>
+       <a href="carrito.html">Añadir a carrito</a>
+       <a href="detalle-producto.html">Ver</a>
+      </div>
+     
+      <div>
        <img src="/Imagenes/car-holder.jpg" width="20%" alt="Car Holder" />
-       <div>
-         <h3>Soporte móvil para coches</h3>
-         <h3>450,99</h3>
+       <h3>Soporte móvil para coches</h3>
+       <p>450,99</p>
+       <p>Consigue ahora los mejores productos de Gnaranja</p>
+       <a href="carrito.html">Añadir a carrito</a>
+       <a href="detalle-producto.html">Ver</a>
        </div>
-       <h4>Consigue ahora los mejores productos de Gnaranja</h4>
-       <div>
-         <a href="carrito.html">Añadir a carrito</a>
-         <a href="detalle-producto.html">Ver</a>
-       </div>
-     </div>
-   </div>
+   
  </section>
 
  <section>
