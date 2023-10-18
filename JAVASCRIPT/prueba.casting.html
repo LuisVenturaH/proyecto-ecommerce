@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+// ENUNCIADO: PEDIR DOS NÚMEROS Y SACAR POR CONSOLA EL RESULTADO DE LA SUMA, RESTA, DIVISIÓN Y MULTIPICACIÓN.
+
+//         var num1 = Number(prompt("Introduce el primer número: "));
+//         var num2 = Number(prompt("Introduce el segundo número: "));
+
+//         var resultadoSuma = num1+num2;
+//         var resultadoResta = num1-num2;
+//         var resultadoMultiplicar = num1 * num2;
+//         var resultadoDividir = num1/num2;
+
+// console.log ("La suma de " + num1 + " más " +num2 + " es: " + resultadoSuma);
+// console.log ("La resta de " + num1 + " menos" + num2 + " es: " + resultadoResta);
+// console.log ("La multiplciación de " + num1 + " por"+  num2 + " es: "+ resultadoMultiplicar );
+// console.log ("La división de " + num1 + " entre " + num2 + " es: " + resultadoDividir);
+   
+// ENUNCIADO: Pedir 3 números y sacar el promedio.
+
+// var num1 = Number(prompt("Intrpduce el primer número:"));
+// var num2 = Number(prompt("Introduce el segundo número"));
+// var num3 = Number(prompt("Introduce el tercer número"));
+
+// var ResultadoPromedio = (num1 + num2 + num3)/3;
+
+// console.log("El promedio de los números " + num1 + ", " + num2 + ", y " + num3 + " es: " + ResultadoPromedio);
+
+// Enunciado: Pedir 2 datos, base y altura, y cacular el área de un triangulo.
+
+// var base = Number(prompt("Introduce la base del triangulo:"));
+// var altura = Number(prompt("Introduce la altura:"))
+// var area = parseFloat(base*altura)/2;
+
+// console.log("El area de la base: " + base + " y la altura: " + altura + " es: " + area);
+
+//ENUNCIADO: PIDE A UN USUARIO QUE INTRODUZCA UN NUMERO DECIMAL Y EN CONSOLA QUE SE VEA EL RESULTADO REDONDEADO
+
+// let numero = Number(prompt("Introduce un número decimal"));
+// let numRedondeado = Math.round(numero);
+
+// console.log("El número redondeado de: " + numero + " Es igual a: "+ numRedondeado);
+
+
+// ENCUNCIADO: CREA UN NÚMERO ALEATORIO ENTRE 0 Y 100)
+
+// let numRedondeado1 = Math.random()*100;
+// console.log (parseInt(numRedondeado1));
+
+
+// ENUNCIADO: PIDE A UN USUARIO QUE INTRODUZCA UN NUMERO ENTERO Y COMPRUBEA SI EL POSITIVO, NEGATIVO O CERO. IMPRIME EN CONSOLA. DEMAS INCLUYE SI ES PAR O IMPAR
+
+let valor = Number(prompt("Introduceel número"));
+
+    // if(valor >0){
+    //     console.log("El número es mayor que cero");
+    //         if(valor > 0){
+    //             console.log("El número es positivo");
+    //     }     else{
+    //                               }
+    //         }
+        
+    //     else if (valor<0){
+    //         if(valor<0){
+    //             console.log("El número es menor que cero");
+    //         } else if(valor<0){
+    //             console.log("El número es negativo");    
+    //         }
+    //         console.log("El número es negativo");
+    //     } else {
+    //         console.log("El número es igual a cero");   
+    //     }
+
+// OTRA FORMA
+     if(valor<0){
+        if(valor%2 == 0){
+               console.log("El número es negativo e impar"); 
+        }else{
+            console.log("El número es positovo y par");
+        }
+     }else if (valor>0){
+        if(valor%2 == 0){
+            console.log("El número es positovovo y par");
+        }else{
+            console.log("El número es positivo y par")
+        }
+     }else {
+        console.log("El número es negativo e impar");            
+    }
+   </script>
+</body>
+</html>

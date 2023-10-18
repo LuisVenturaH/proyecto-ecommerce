@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// ENUNCIADO: Creaun un script que pida al usuario un número de socio y que lo comprare con los siguientes casos:
+// 1. Número de los socios válidos: 10000-20000 ambos incluidos
+// 2. Los siguientes socios son motoros y no pueden entrar: 10001, 11001, 15000
+// 3. Si el número de socio es válido y no es moroso, se permite la entrada
+
+// let numeroDado = Number(prompt("Introduce tu número de socio"));
+// let socioMin =  10000;
+// let socioMax = 20000;
+
+    // if (numeroDado <= socioMax && numeroDado >= socioMin && numeroDado == 10001 && numeroDado == 11001 && numeroDado == 15000) {
+    //     alert("El número  " + numeroDado + " es un número de socio válido: ¡¡PUEDES ENTRAR!!");
+    // }
+    // else if (numeroDado == 10001 || numeroDado == 11001 || numeroDado == 15000) {
+    //     alert("El número " + numeroDado + " es socio, pero tienes deuda pendiente. ¡¡PAGA PARA ENTRAR!!");
+    // }
+    // else {
+    //     alert("El número  " + numeroDado + " no es socio ¡¡INSCRIBETE!!");
+    // }
+
+    // OTRA FORMA DE HACERLO CON IF ANIDADOS
+
+//     if (numeroDado>=socioMin && numeroDado<=socioMax) {      
+//         if (numeroDado == 10001 || numeroDado == 11001 || numeroDado == 15000) {            
+//             alert("Eres socio, pero tienes deuda pendiente: ¡PAGA PARA ENTRAR!");
+//         } else {
+//             alert("Eres socio: ¡PUEDES ENTRAR!");
+//     } 
+//     } else {
+//     alert("No eres socio: ¡INSCRIBETE!");
+// }
+ 
+                // EJERCICIO PENDIENTE DE HACER
+
+
+                // ENUNCIADO: Validar la edad introducida por prompt. 
+                // Valores no válidos: null, 0, -
+                // Valores válidos: edad entre 18 y 100 años
+
+                //     var edad = Number(prompt("Introduce tu edad"));
+
+                // if (edad >=18 || edad <= 100) {
+                //     alert("Edad correcta");
+                // }
+                //     else if (edad == isNaN(edad)) {
+                //     alert("No has introducido un número");
+                // }
+                //     else if (edad == 0) {
+                //     alert("Has introducido 0 como edad. No es válido ");
+                // }
+                //     else if (edad < 18) {
+                //     alert("Has introducido una edad menor a 18 años. No es válida");
+                // }
+                //     else if (edad > 100){
+                //     alert("Has introducido una edad mayor a 100 años. No es válida");
+                // }
+
+
+// ENUNCIADO: Pedir por promt un mes de año e indicar cuál estación es.
+//  let fecha = prompt("Introduce un mes para conocer la estación").toLowerCase();
+
+//     if (fecha == "marzo" || fecha == "abril" || fecha == "mayo") {
+//         alert("Estas en primavera");
+//     } 
+//     else if (fecha == "junio" || fecha == "julio" || fecha == "agosto") {
+//         alert("Estas en verano");
+//     } 
+//     else if (fecha == "septiembre" || fecha == "octubre" || fecha == "noviembre"){
+//         alert("Estas en otoño");
+//     } 
+//     else if (fecha == "diciembre" || fecha == "enero" || fecha == "febrero") {
+//         alert("Estas en invierno");
+//     } 
+//     else {
+//         alert("Has introducido un mes incorrecto. Vuelve a intertarlo")
+//     }
+
+// MISMO EJERCICIO CON DO WHILE
+var fecha;
+var estacion;
+
+do{
+fecha = prompt("Introduce un mes para conocer la estación").toLowerCase();
+
+if (fecha == "marzo" || fecha == "abril" || fecha == "mayo") {
+    estacion = "Invierno";
+    alert("Estas en primavera");
+} 
+
+else if (fecha == "junio" || fecha == "julio" || fecha == "agosto") {
+    estacion = "Verano";
+    alert("Estas en verano");
+} 
+else if (fecha == "septiembre" || fecha == "octubre" || fecha == "noviembre"){
+    estacion = "Otoño";
+    alert("Estas en otoño");
+} 
+else if (fecha == "diciembre" || fecha == "enero" || fecha == "febrero") {
+    estacion = "Invierno";
+    alert("Estas en invierno");
+} else{
+    alert("Te has equivocado. Vuelve a intentarlo");
+}
+    
+} while (fecha != "enero" && fecha != "febrero" && fecha != "marzo" && fecha != "abril" && fecha != "mayo" && fecha != "junio" && 
+fecha != "julio" && fecha != "agosto" && fecha != "septiembre" && fecha != "octubre" && fecha != "noviembre" && fecha != "diciembre");
+
+alert("Gracias por usar el programa");
+
+// EL MISMO EJEMPLO CON WHILE
+// var continuar = true;
+
+// while (continuar) {
+// var mes = prompt("Introduce un mes para conocer la estación").toLowerCase();
+
+// if (mes === "marzo" || mes === "abril" || mes === "mayo") {
+//     alert("Estas en primavera");
+// } 
+// else if (mes === "junio" || mes === "julio" || mes === "agosto") {
+//     alert("Estas en verano");
+// } 
+// else if (mes === "septiembre" || mes === "octubre" || mes === "noviembre"){
+//     alert("Estas en otoño");
+// } 
+// else if (mes === "diciembre" || mes === "enero" || mes === "febrero") {
+//     alert("Estas en invierno");
+
+// } else{
+//     alert("Te has equivocado. Vuelve a intentarlo");
+// }
+// var respuesta = prompt('¿Quieres comprobar otro mes? (sí/no)');
+//     continuar = respuesta.toLowerCase() === 'si';    
+// } 
+//     alert('¡Gracias por usar el programa!');
+
+
+
+
+
+
+    </script>
+</body>
+</html>

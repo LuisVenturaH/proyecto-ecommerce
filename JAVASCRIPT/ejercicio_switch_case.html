@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// ENUNCIADO: Escribe un programa con JS que realice las siguentes operaciones:
+// Con un switch case mirar si has ganado alguno de los siguientes premios: 
+// primer premio: 123
+// segundo premio: 234
+// tercer premio: 789
+// Defalut: MEjor suerte para la próxima vez 
+
+let ticket = Number(prompt("Introduce tu número de billete:"));
+
+
+switch (ticket) {
+       case 123: 
+       imprime = "Felicidades, acabas de ganar el primer premio"; 
+        break;
+
+
+       case 456:
+        imprime = "Felicidades, acabas de ganar el segundo premio";
+       break;
+       
+       case 789:
+        imprime =  "Felicidades, acabas de ganar el tercer premio";
+       break;
+
+       default:
+        imprime = "Lo siento. Mejor suerte en la próxima"
+        break;
+    }
+
+    alert(imprime);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productos PRUEBA</title>
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <!--Bootstraps Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"/>
+    <!--Mis hojas de estilo-->
+    <link rel="stylesheet" href="/CCS/style2.css"/>
+    <link rel="stylesheet" href="/CCS/button.css">
+    <link rel="stylesheet" href="/CCS/card.css">
+
+  </head>
+  <body>
+    <header>
+        <div class="contenedor-menu-logo"> <!--DIV PARA LOGO + BUSCADOR + CARRITO-->
+            <div class="logo">
+                <img src="/Imagenes/Logo-gnaranja-blanco.png" alt="Logotipo Gnranaja"/>
+            </div>
+
+            <!-- <div class="menu"> DIV PARA BUSCADOR Y CARRITO -->
+                
+                <div class="buscador">
+                    
+                        <input type="search" class="buscador" name="buscador" placeholder="¡Encuentra lo que buscas!"/>
+                        <span class="lupa"><i class="bi bi-search m-color"></i></span>
+                   
+                </div>    
+                
+                
+                <div class="btn carrito">
+                    <button type="button"><a href="carrito.html">Carrito</a></button>
+                    <span class="circulo-con-numero"><p class="numero">5</p></span>
+                </div>
+            <!-- </div> -->
+        </div>
+
+        <nav class="contenedor-menu"> <!--MENU GENERAL-->
+            <div class="clean control"> <!--MENU PRIMARIO-->
+                <ul>
+                <li><a href="index.html">Todos los productos</a></li>    
+                <li><a href="nosotros.html">Nosotros</a></li>  
+                <li><a href="contacto.html">Contacto</a></li> 
+                </ul>
+            </div>
+
+            <div  class="clean control"> <!--MENU SECUNDARIO-->
+                <ul> 
+                <li><a href="mispedidos.html">Pedidos</a></li>    
+                <li><a href="index.html">Logout</a></li>  
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div> 
+            <div class="menu">   <!--TEXTO INTRODUCE TARJETA-->
+            <h1 class="h3 m-color">Los mejores productos tecnológicos del 2023</h1>
+            <h4>¡Artículos geniales para gente encantadora!</h4>
+            </div>
+            <div class="btn"><button type="button"><a href="index.html">Ver todos</a></button></div>
+        </div>
+
+        <!-- *************** GRAN CONTENEDOR TARJETAS DE PRODUCTO ***************-->
+
+        <div class="contenedor-principal">
+            
+            <!-- *************** CONTENEDOR TARJETA DE PRODUCTO UNO ***************-->
+
+            <div class="card">   
+                <div>               <!--IMAGEN PRODUCTO-->
+                            <img src="/Imagenes/Altavoces.jpg" alt="Altavoces"/>
+                 </div>       
+
+                <div class="contenedor-interno-card">   <!--DESCRIPCIÓN O CONTENIDO DE LA TARJETA UNO--> 
+                                 
+                        <div>  
+                            <h2 class="menu-card h6">Altavoces inalámbricos</h2>                           
+                             <span class="menu-card">450,99<i class="bi bi-currency-euro m-color h5"></i></span>
+                        </div>
+
+                        <div>   <!--VALORACIONES-->
+                            <span class="m-color">
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            </span>
+                                        
+                            <span class="valoracion">
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            </span>                  
+                        </div>  <!--CIERRE VALORACIONES-->
+
+                        <p><i>¡Artículos Geniales para Gente Encantadora!</i></p>
+
+                        <div> <!--BOTONES AÑADIR CARRITO Y VER PRODUCTO-->
+                            <div class="btn"><button type="button" name="añadir-carrito"><a href="carrito.html">Añadir a carrito</a></button></div>
+                            <div class="btn"><button type="button" name="detalle-productos"><a href="detalle-productos.html">Ver</a></button></div> 
+                        </div>
+
+                    </div> <!--CIERRE DESCRIPCIÓN DEL PRODUCTO-->   
+                        
+                </div>     <!--CIERRE CONTENEDOR TARJETA DE PRODUCTO UNO-->
+
+
+                <!-- *************** CONTENEDOR TARJETA DE PRODUCTO DOS ***************-->
+
+                <div class="card">   
+                    <div>               <!--IMAGEN PRODUCTO-->
+                                <img src="/Imagenes/Auriculares.jpg" alt="Auriculares"/>
+                     </div>       
+    
+                    <div class="contenedor-interno-card">   <!--DESCRIPCIÓN O CONTENIDO DE LA TARJETA DOS--> 
+                                     
+                            <div>  
+                                <h2 class="menu-card h6">Auriculares Wireless Stereo</h2>                           
+                                 <span class="menu-card">450,99<i class="bi bi-currency-euro m-color h5"></i></span>
+                            </div>
+    
+                            <div>   <!--VALORACIONES-->
+                                <span class="m-color">
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                </span>
+                                            
+                                <span class="valoracion">
+                                
+                                </span>                  
+                            </div>  <!--CIERRE VALORACIONES-->
+    
+                            <p><i>¡Artículos Geniales para Gente Encantadora!</i></p>
+    
+                            <div> <!--BOTONES AÑADIR CARRITO Y VER PRODUCTO-->
+                                <div class="btn"><button type="button" name="añadir-carrito"><a href="carrito.html">Añadir a carrito</a></button></div>
+                                <div class="btn"><button type="button" name="detalle-productos"><a href="detalle-productos.html">Ver</a></button></div> 
+                            </div>
+    
+                        </div> <!--CIERRE DESCRIPCIÓN DEL PRODUCTO-->   
+                            
+                    </div>     <!--CIERRE CONTENEDOR TARJETA DE PRODUCTO DOS-->
+
+
+                <!-- *************** CONTENEDOR TARJETA DE PRODUCTO TRES ***************-->
+
+                <div class="card">   
+                    <div>               <!--IMAGEN PRODUCTO-->
+                                <img src="/Imagenes/cascos.jpg" alt="Cascos"/>
+                     </div>       
+    
+                    <div class="contenedor-interno-card">   <!--DESCRIPCIÓN O CONTENIDO DE LA TARJETA TRES--> 
+                                     
+                            <div>  
+                                <h2 class="menu-card h6">Cascos TWS</h2>                           
+                                 <span class="menu-card">450,99<i class="bi bi-currency-euro m-color h5"></i></span>
+                            </div>
+    
+                            <div>   <!--VALORACIONES-->
+                                <span class="m-color">
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                </span>
+                                            
+                                <span class="valoracion">
+                                <i class="bi bi-star"></i>
+                                </span>                  
+                            </div>  <!--CIERRE VALORACIONES-->
+    
+                            <p><i>¡Artículos Geniales para Gente Encantadora!</i></p>
+    
+                            <div> <!--BOTONES AÑADIR CARRITO Y VER PRODUCTO-->
+                                <div class="btn"><button type="button" name="añadir-carrito"><a href="carrito.html">Añadir a carrito</a></button></div>
+                                <div class="btn"><button type="button" name="detalle-productos"><a href="detalle-productos.html">Ver</a></button></div> 
+                            </div>
+    
+                        </div> <!--CIERRE DESCRIPCIÓN DEL PRODUCTO-->   
+                            
+                    </div>     <!--CIERRE CONTENEDOR TARJETA DE PRODUCTO TRES-->
+
+
+                    <!-- *************** CONTENEDOR TARJETA DE PRODUCTO CUATRO ***************-->
+
+                    <div class="card">   
+                        <div>               <!--IMAGEN PRODUCTO-->
+                                    <img src="/Imagenes/Cargador_inalambrico.jpg" alt="Cargador inalámbrico"/>
+                         </div>       
+        
+                        <div class="contenedor-interno-card">   <!--DESCRIPCIÓN O CONTENIDO DE LA TARJETA CUATRO--> 
+                                         
+                                <div>  
+                                    <h2 class="menu-card h6">Cargador móvil inalámbrico</h2>                           
+                                     <span class="menu-card">450,99<i class="bi bi-currency-euro m-color h5"></i></span>
+                                </div>
+        
+                                <div>   <!--VALORACIONES-->
+                                    <span class="m-color">
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    </span>
+                                                
+                                    <span class="valoracion">
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    </span>                  
+                                </div>  <!--CIERRE VALORACIONES-->
+        
+                                <p><i>¡Artículos Geniales para Gente Encantadora!</i></p>
+        
+                                <div> <!--BOTONES AÑADIR CARRITO Y VER PRODUCTO-->
+                                    <div class="btn"><button type="button" name="añadir-carrito"><a href="carrito.html">Añadir a carrito</a></button></div>
+                                    <div class="btn"><button type="button" name="detalle-productos"><a href="detalle-productos.html">Ver</a></button></div> 
+                                </div>
+        
+                            </div> <!--CIERRE DESCRIPCIÓN DEL PRODUCTO-->   
+                                
+                        </div>     <!--CIERRE CONTENEDOR TARJETA DE PRODUCTO CUATRO-->
+
+        </div> <!--CIERRE GRAN CONTENEDOR TARJETAS DE PRODUCTO-->
+
+    </main>
+    
+    <footer>
+
+        <div>   <!-- GRAN CONTENEDOR GENERAL DEL FOOTER-->
+
+            <div>   <!-- PRIMER CONTENEDOR DEL FOOTER-->
+
+                <div class="logo"> <!--LOGOTIPO-->
+                    <img src="/Imagenes/logo-gnaranja-oficial.png" alt="Logotipo Gnranaja"/>
+                </div>
+
+                <nav>   <!-- MENU PIE DE PÁGINA-->
+                <div class="menu"> <!--PRIMER MENU-->
+                    <ul class="clean">
+                        <li><a href="contacto.html">Centro de ayuda</a></li>
+                        <li><a href="contacto.html">Servicio al consumidor</a></li>
+                        <li><a href="contacto.html">Escríbenos</a></li>
+                        <li><a href="contacto.html">Servicio telefónico</a></li>
+                    </ul>
+                </div>
+                
+                <div class="menu"> <!--SEGUNDO MENU-->
+                    <ul class="clean">
+                        <li><a href="index.html">Política de privacidad</a></li>
+                        <li><a href="index.html">Condiciones de compra</a></li>
+                        <li><a href="index.html">Opiniones de clientes</a></li>
+                        <li><a href="index.html">Aviso de privacidad y cookies</a></li>
+                    </ul>
+                </div>
+                </nav>
+
+            </div>  <!-- CIERRE PRIMER CONTENEDOR DEL FOOTER-->
+
+
+            
+            <div>   <!-- SEGUNDO CONTENEDOR DEL FOOTER-->
+
+                <div> 
+                    <p>Únete a nuestra newslette y no te pierdas ninguna de nuestras ofertas</p>
+                </div>
+
+                <form> <!-- FORMULARIO INSCRIPCION NEWSLETTE-->
+                    <div class="buscador"><input type="email" name="email" placeholder="Introduce tu email"/></div>
+                    <div class="btn"><button type="submit">Suscribirme</button></div>
+                    <input type="checkbox" id="politica-privacidad" value="acepto">Acepto la política de privacidad de esta web
+                </form>
+
+                <div>
+                    <h5>Síguenos en redes</h5>
+                    <a href="facebook.com"><i class="bi bi-facebook btn"></i></a>
+                    <a href="youtube.com"><span><i class="bi bi-youtube btn"></i></a>
+                    <a href="instagram.com"><i class="bi bi-instagram btn"></i></a>
+                    <a href="twitch.com"><i class="bi bi-twitch btn"></i></a>
+                </div>
+
+            </div>  <!-- CIERRE SEGUNDO CONTENEDOR DEL FOOTER-->
+
+        </div>  <!-- CIERRE GRAN CONTENEDOR GENERAL DEL FOOTER-->
+    </footer>
+   
+  </body>
+</html>

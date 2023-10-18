@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    "
+    <script>
+        var edad = Number(prompt("Introduce tu edad"));
+        var dinero = Number(prompt("Introduce la cantidad de dinero ahorrado"));
+        var empleado = confirm("¿Estas empleado en este momento?     Aceptar= Si    Cancelar= No");
+        var dineroMinimo = 20000
+
+if (edad>=18 && dinero>=dineroMinimo && empleado==false ) {
+    alert("¡¡Felicidades!!, cumples todas las condiciones para la beca");
+} 
+else if (edad<18 && dinero>=dineroMinimo && empleado==false ){
+    alert("Lo siento, no tienes la edad suficiente para optar por la beca");  
+}
+else if (edad>=18 && dinero<=dineroMinimo && empleado==false ){
+    alert("Lo siento, no tienes el dinero suficiente para optar por la beca");   
+}  
+else if (edad>=18 && dinero>=dineroMinimo && empleado ){
+    alert("Lo siento, estas empleado, por lo que no puedes optar por la beca");    
+} 
+else if (edad>=18 && dinero<=dineroMinimo && empleado ){
+    alert("Tienes la edad, pero no tienes ni el dinero y estás empleado, por lo que no puedes optar por la beca");    
+} 
+else{
+    alert("No cumpleas alguno de los requisitos. Vuelve cuando lo cumplas todos")
+}
+
+
+// CONDICINAL ANIDADO
+if (edad>=18 && dinero>=dineroMinimo && empleado==false ) {
+    alert("¡¡Felicidades!!, cumples todas las condiciones para la beca");
+} else{
+        if (edad < 18) {
+            alert("No tienes la edad");
+        } else {
+            if (precio<20000) {
+                alert("No tienes el dinero");
+            } else {
+                alert("No estás desempleado");
+                
+            }
+            
+        }
+}
+
+    </script>
+</body>
+</html>

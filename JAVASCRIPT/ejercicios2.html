@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//ENUNCIADO 1: Escribe un programa en JavaScript que realice las siguientes operaciones:
+// Pedir al usuario dos datos, (precio y descuento).
+// El programa deberá tomar el precio de un producto y el porcentaje de descuento y devolver el precio con el descuento aplicado.
+
+    // let precio = Number(prompt("Introduzca el precio"));
+    // let descuento = Number(prompt("Introduce el descuento a aplicar"));
+    // let descuentoAplicar = 100-descuento;
+    // var precioFinal = ("El monto del precio descontado es " + (precio * descuentoAplicar)/100);
+
+    // alert(precioFinal);
+
+
+// ENUNCIADO 2: Escribe un programa en JavaScript que realice las siguientes operaciones:
+// Pedir al usuario un dato, temperatura en grados Fahrenheit.
+// El programa deberá devolver la temperatura equivalente en grados Celsius. 
+
+// Grados centígrados = (grados Fahrenheit − 32) × 5/9
+
+    // let fahrenheit = Number (prompt("Introduce la temperatura en Fahrenheit"));
+
+    // let celsius = ("El dato equivale a " + (fahrenheit - 32) * 5/9) + " grados celsius";
+
+    // alert(celsius);
+
+// ENUNCIADO 3: Escribe un programa en JavaScript que realice las siguientes operaciones:
+// Pedir al usuario un dato de tipo String.
+// El programa deberá devolver el string en mayúsculas. Por ejemplo, "Hola" debería devolver "HOLA".
+// Reemplace todos los espacios en blanco por guiones bajos. Por ejemplo, "Hola mundo" debería devolver "Hola_mundo".
+
+    // let palabra = prompt("Escribe una frase de dos palabras o más").toUpperCase();
+    // let sustituye = palabra.replaceAll (" ", "_");
+
+    // alert(sustituye);
+
+// ENUNCIADO 4: Vamos a crear una calculadora básica.
+// Escribe un programa en JavaScript que realice las siguientes operaciones:
+// Pedir al usuario dos datos de tipo Number. Serán los números con los que vamos a operar.
+// Preguntar al usuario si va a sumar, restar, multiplicar o dividir.
+// Realizar la operación elegida usando los números introducidos por el usuario.
+// Muestra el resultado en una alerta.
+
+        // let num1 = Number(prompt("Introduce el primer número"));
+        // let num2 = Number(prompt("Introduce el segundo número"));
+        // let operacion = prompt("¿Qué operación vas a realizar: SUMAR, RESTAR, DIVIDIR O MULTIPLICAR?").toUpperCase();
+
+        // if (operacion=="SUMAR"){
+        //     alert("El resultado de sumar " + num1 + " más " + num2 + " es " + (num1+num2));
+        // } 
+        // else if (operacion=="RESTAR"){
+        //     alert("El resultado de estar " + num1 + " menos " + num2 + " es " + (num1-num2));
+        // } 
+        // else if (operacion=="DIVIDIR"){
+        //     alert("El resultado de la dividir " + num1 + " entre " + num2 + " es " + (num1 / num2));    
+        // }
+        // else if (operacion=="MULTIPLICAR"){
+        //     alert("El resultado de multiplicar " + num1 + " por " +num2 + " es " + (num1*num2));
+        // }
+        // else{
+        //     alert("No has introducido una operación válida");
+        // }
+
+//  ENUNCIADO 5. Escribe un programa en JavaScript que realice las siguientes operaciones:
+// Pedir al usuario dos datos de tipo String, (login y password). 
+// Verificar si login=admin y si password = 1234. Sólo en caso afirmativo saldrá un alert en pantalla que diga “acceso permitido”, de lo contrario saldrá un alert que diga “acceso denegado”.
+// Vamos a suponer que en el campo login daremos por válida cualquier variación entre mayúsculas y minúsculas que el usuario nos pueda introducir. Es decir, será valido ADMIN, Admin, admin, admiN…etc
+
+
+            let login = prompt("Introduce tu usuario").toUpperCase();
+            let password = prompt("introduce tu contraseña");
+
+            if (login=="ADMIN" && password=="1234"){
+                alert("Acceso permitido");
+            } 
+            else if (login!="ADMIN" && password=="1234"){
+                alert("Tu usuario no es correcto. Introduce un usuario correcto");    
+            } 
+            else if (login=="ADMIN" && password!="1234"){
+                alert("Tu contraseña no es correcta. Introduce una contraseña correcta");
+            }
+            else if (login!="ADMIN" && password!="1234"){
+                alert("Tu usuario y contraseña no son correctas. Introduce usuario y contraseña");
+            }
+            else {
+                alert("Acceso denegado, introduce nuevamente tus datos");
+            }
+
+    </script>
+
+
+
+</body>
+</html>

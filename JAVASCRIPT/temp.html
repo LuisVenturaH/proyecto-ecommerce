@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var continuar = true;
+
+while (continuar) {
+    var mes = prompt('Ingresa un mes del año (por ejemplo, enero, febrero, marzo, etc.):');
+    mes = mes.toLowerCase(); // Convierte el texto ingresado a minúsculas para hacerlo más flexible
+
+    if (mes === 'diciembre' || mes === 'enero' || mes === 'febrero') {
+        alert('Es invierno.');
+    } else if (mes === 'marzo' || mes === 'abril' || mes === 'mayo') {
+        alert('Es primavera.');
+    } else if (mes === 'junio' || mes === 'julio' || mes === 'agosto') {
+        alert('Es verano.');
+    } else if (mes === 'septiembre' || mes === 'octubre' || mes === 'noviembre') {
+        alert('Es otoño.');
+    } else {
+        alert('El mes ingresado no es válido. Inténtalo de nuevo.');
+    }
+
+    var respuesta = prompt('¿Quieres comprobar otro mes? (sí/no)');
+    continuar = respuesta.toLowerCase() === 'si';
+}
+
+alert('¡Gracias por usar el programa!');
+
+
+    </script>
+
+
+</body>
+</html>

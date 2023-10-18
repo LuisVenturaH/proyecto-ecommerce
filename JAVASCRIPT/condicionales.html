@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*var edad= Number(prompt("Introduce tu edad:"));
+
+        if(edad<18){
+            alert("Eres menor de edad. No tiene acceso permitido")
+        }
+        else{
+            alert("Eres mayor de edad, acceso permitido")
+        }*/
+
+
+/*Ejemplo:
+Un coche cuesta 30000€. Preguntar al usuario cuánto dinero tiene. 
+Comparar ambas cantidades y sacar un mensaje de alerta diciendo si puede o no comprar el coche*/
+
+    var valorCoche=30000;
+    var dineroAhorrado=Number(prompt("¿Cuánto dinero tienes?"));
+
+    if(valorCoche<=dineroAhorrado){
+        alert("Tienes dinero suficiente para comprar el coche. Te sobran " + (dineroAhorrado-valorCoche) + " para combustible y salir de fiesta");
+    }
+    else {
+        alert("No tienes dinero para comprar este coche, busca uno más barato");
+    }
+    </script>
+</body>
+</html>

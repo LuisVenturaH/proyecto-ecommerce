@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+// let contador = 0;
+// let ciclos = Number(prompt("Introduce un número"));
+
+// while (contador < ciclos) {
+//     document.write("<p>" + "Contador vale ahora " + contador);
+//     contador++;
+// }
+
+// ENUNCIADO: PEDIR UN NUMERO AL USUARIO Y QUE REPITA DICHA PETICIÓN HASTA QUE EL INTRODUZCA 1234
+
+            // let numero = 1234;
+            // let numeroUsuario;
+
+            // while (numero != numeroUsuario) {
+            // numeroUsuario = Number(prompt("Introduce un número de 4 cifras"));
+            // }
+
+            // alert("Haz introducido el número correcto");
+
+// ENUNCIADO: PEDIR DOS DATOS, LOGIN Y PASSAWORD, Y SEGUIR PIDIENDOLO HASTA QUE SE DEN LOS DATOS CORRECTOS. LOGIN: ADMIN, PASSWORD: 1234
+
+            var login = "admin";
+            var password = 1234;
+            var loginUsuario;
+            var passwordUsuario;
+            var contador=0;
+
+            while (login != loginUsuario || password != passwordUsuario) {
+                loginUsuario = prompt("Introduce tu usuario").toLowerCase();
+                passwordUsuario = Number(prompt("Introduce tu contraseña"));
+                contador++;
+
+                if (login == loginUsuario && password == passwordUsuario) {
+                    alert("ACCESO PERMITIDO. Los has logrado en " + contador + " intentos.");
+                }
+                else if (login != loginUsuario && password == passwordUsuario){
+                    alert("tienes bien la contraseña, pero no el usuario, INTRODUCE NUEVAMENTE TU USUARIO");
+                }
+                else if (login == loginUsuario && password != passwordUsuario){
+                    alert("Tienes bien el usuario, pero no la contraseña, INTRODUCE NUEVAMENTE TU CONTRASEÑA");
+                }
+                else {
+                    alert("Haz introducido incorrectamente tanto el usuario como la contraseña");
+                }   
+            }
+               
+    // ENUNCIADO. CREAR UN NUMERO ALEATORIO ENTRE 1 Y 100. PEDIR UN NUMERO ENTRERO Y TRATAR DE ADIVINARLO. INDICAR EN CUANTOS INTETNOS LO HA LOGADO.
+
+                // var numero = parseInt(Math.random() * 100);
+                // var numero_usuario;
+                // contador = 0;
+
+                //    while (numero_usuario != numero) {
+                //         numero_usuario = Number(prompt("Introduce un numero entre 1 y 100"));
+                //         contador++;
+                    
+                //         if (numero_usuario > numero) {
+                //             alert("Tu número es muy alto. Introduce otro número");
+                //         }
+                //         else if (numero_usuario < numero) {
+                //             alert("Tu numero es muy bajo. Introduce otro número");
+                //         }
+                //      } 
+                //         alert("HAS ACERTADO!!!, el número era " + numero + " . " + "Lo has hecho en " + contador + " intentos");
+    
+     
+
+    </script>
+</body>
+</html>
